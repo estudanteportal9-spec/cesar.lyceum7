@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Consulta de Documentos</title>
+
   <style>
     * {
       margin: 0;
@@ -11,33 +12,58 @@
     }
 
     body {
-      background-color: #f57c00; /* Laranja */
+      background-color: #f57c00;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
       font-family: Arial, sans-serif;
     }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+    h1 {
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 40px;
+      font-weight: bold;
     }
 
-    img {
-      max-width: 90%;
-      height: auto;
+    .card {
+      background: #eee;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      width: 600px; /* controla o tamanho */
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%; /* agora ocupa todo o card */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .texto {
+      color: white;
+      margin-top: 40px;
+      max-width: 800px;
+      text-align: center;
+      font-weight: bold;
+      padding: 0 20px;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
+  <h1>CONSULTA DE DOCUMENTOS</h1>
+
+  <div class="card">
     <img src="imagem.png" alt="Consulta de Documentos">
+  </div>
+
+  <div class="texto">
+    Este ambiente permite a informação ao público da veracidade dos Documentos gerados pela Instituição de Ensino por meio Digital. Para a consulta deverá ser utilizado o código de validação de acesso informado no documento gerado.
   </div>
 
 </body>
